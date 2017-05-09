@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server -a localhost -p 8080"
+    "server": "http-server -a localhost -p 8080",
+    "presass": "cp ./src/index.html ./dist/",
+    "sass": "node-sass ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/ -o ./dist/css/"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,13 @@
   "homepage": "https://github.com/isaias7/unotes#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-sass": "^3.3.7",
     "font-awesome": "github:fortawesome/Font-Awesome"
   },
   "keywords": [
     "notes"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
 }
