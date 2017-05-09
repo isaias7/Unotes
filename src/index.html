@@ -6,61 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unotes</title>
-
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\main.css">
 
 </head>
 
 <body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#">Usuario</a></li>
-        <li><a href="#">Crear nota</a></li>
-        <li><a href="#">Crear carpeta</a></li>
-        <li><a href="#">Tag</a></li>
-      </ul>
-    </nav>
-
-
-    <section>
-      <input type="search" placeholder="Buscar">
-      <section>
-        <h2>Nota 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
-          iure iusto. Veritatis labore atque dolorem doloremque doloribus quae necessitatibus, autem minus. Velit repellendus
-          magnam, ut.</p>
-      </section>
-    </section>
-
-    <div class="main">
-      <div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1">
         <nav>
           <ul>
-            <li><a href="#">Nueva nota</a></li>
-            <input type="text">
-            <li><a href="#">Agregar editor</a></li>
-            <li><a href="#">Compartir</a></li>
-            <li><a href="#">Borrar</a></li>
-            <li><a href="#">Información</a></li>
+            <li><a href="#">Usuario</a></li>
+            <li><a href="#">Crear nota</a></li>
+            <li><a href="#">Crear carpeta</a></li>
+            <li><a href="#">Tag</a></li>
           </ul>
         </nav>
-        <hr>
-        <form action="">
-          <select>
-            <option value="">BrainStation</option>
-            <option value="">UCR</option>
-            <option value="">ULACIT</option>
-          </select>
-          <input type="text" placeholder="tag">
-        </form>
       </div>
-      <div>
-        <input type="text" placeholder="nota">
+      <!--fin de menu-->
+      <div class="col-md-3">
+        <section>
+          <input type="search" placeholder="Buscar">
+          <section>
+            <h2>Nota 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
+              iure iusto. Veritatis labore atque dolorem doloremque doloribus quae necessitatibus, autem minus. Velit repellendus
+              magnam, ut.</p>
+          </section>
+        </section>
+      </div>
+      <!--fin de notas-->
+      <div class="col-md-8">
+        <div class="main">
+          <div class="row">
+            <div class="col-md-12">
+              <nav>
+                <ul>
+                  <li><a href="#">Nueva nota</a></li>
+                  <input type="text">
+                  <li><a href="#">Agregar editor</a></li>
+                  <li><a href="#">Compartir</a></li>
+                  <li><a href="#">Borrar</a></li>
+                  <li><a href="#">Información</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-12">
+              <form action="">
+                <select>
+                  <option value="">BrainStation</option>
+                  <option value="">UCR</option>
+                  <option value="">ULACIT</option>
+                  </select>
+                <input type="text" placeholder="tag">
+              </form>
+            </div>
+            <div class="col-md-12">
+              <input type="text" placeholder="nota">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <i class="fa fa-user" aria-hidden="true"></i>
 
 </body>
 
