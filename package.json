@@ -1,0 +1,24 @@
+{
+  "name": "unotes",
+  "version": "1.0.0",
+  "description": "aplicacion de notas en linea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server -a localhost -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaias7/unotes.git"
+  },
+  "author": "Carolina Azofeifa - Isaias Salas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaias7/unotes/issues"
+  },
+  "homepage": "https://github.com/isaias7/unotes#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "github:fortawesome/Font-Awesome"
+  }
+}
