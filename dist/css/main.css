@@ -4282,7 +4282,7 @@ input[type="search"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1rem 1rem 0 1rem;
-  width: 80%; }
+  width: 70%; }
 
 .btn {
   background-color: transparent;
@@ -4294,3 +4294,15 @@ input[type="search"] {
 body {
   height: 100vh;
   overflow: hidden; }
+
+.sectionFile {
+  background-color: #ffbbbc;
+  width: 20%;
+  height: 30vh;
+  top: 35vh;
+  position: absolute;
+  z-index: 2;
+  border-radius: 3px;
+  border: 1px;
+  border-color: #E5E5E8;
+  left: -40%; }

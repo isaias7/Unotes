@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Unotes</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="container-fluid">
     <div class="row">
@@ -18,7 +20,7 @@
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/user-3.svg" alt="Configuration user"></button>
             </li>
             <li class="nav-item">
-              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
+              <button class="navBar__button" href="#" id="buttonFile" onclick="return file();"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
             </li>
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
@@ -108,8 +110,34 @@
         </div>
       </div>
     </div>
+
+
+    <section class="sectionFile" id="menuLateralFile">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navBar navbar navbar-toggleable-md navbar-light bg-faded">
+            <ul "navBar__list navbar-nav mr-auto">
+              <li class="nav-item">
+                <p> "Agregar nota"</p>
+              </li>
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
   </div>
+
+
+
+
   <script src="../src/js/home.js"></script>
 
 </body>
+
 </html>
