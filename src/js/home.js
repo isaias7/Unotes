@@ -1,22 +1,21 @@
 
 window.onload = function init(){
-	   buttonFile = document.getElementById("buttonFile");
-	   menuLateralFile = document.getElementById("menuLateralFile");
-       
-	   
+	   buttonFile = document.getElementById("buttonLib");
+	   menuLateralLib = document.getElementById("menuLateralLib");
 	}
-
-function file(){
+function note(){
+    document.getElementById("nameNote").focus();
+}
+function lib(){
     console.log("llamo");
-	menuLateralFile = document.getElementById("menuLateralFile");
-    var s = menuLateralFile.style.left;
+	menuLateralLib = document.getElementById("menuLateralLib");
+    var s = menuLateralLib.style.left;
     if(s=="40%"){
-        menuLateralFile.style.left=-40+"%";
+        menuLateralLib.style.left=-40+"%";
     }
     else{
-        menuLateralFile.style.left=40+"%";
+        menuLateralLib.style.left=40+"%";
     }
-
 }
 document.onkeydown = function myFunction(event) {
 }

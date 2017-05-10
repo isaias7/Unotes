@@ -20,10 +20,10 @@
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/user-3.svg" alt="Configuration user"></button>
             </li>
             <li class="nav-item">
-              <button class="navBar__button" href="#" id="buttonFile" onclick="return file();"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
+              <button class="navBar__button" href="#"  id="buttonNote" onclick="return note();"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
             </li>
             <li class="nav-item">
-              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
+              <button class="navBar__button" href="#" id="buttonLib" onclick="return lib();"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
             </li>
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/tag.svg" alt="Tags"></button>
@@ -59,7 +59,7 @@
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
                     </li>
                     <li class="nav-item ">
-                      <input class="form-control navNote__input" type="text" placeholder="Nueva nota">
+                      <input class="form-control navNote__input" id ="nameNote" type="text" placeholder="New note">
                     </li>
                     <li class="nav-item">
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/user-2.svg" alt="New user"></button>
@@ -111,25 +111,23 @@
       </div>
     </div>
 
+    <section class="sectionFile" id="menuLateralLib">
 
-    <section class="sectionFile" id="menuLateralFile">
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="navBar navbar navbar-toggleable-md navbar-light bg-faded">
-            <ul "navBar__list navbar-nav mr-auto">
-              <li class="nav-item">
-                <p> "Agregar nota"</p>
-              </li>
-              <li class="nav-item">
-              </li>
-              <li class="nav-item">
-              </li>
-              <li class="nav-item">
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <nav class="navBarnavsectionFile navbar navbar-toggleable-md navbar-light bg-faded">
+        <ul "navBar__list navbar-nav mr-auto">
+          <li class="nav-item">
+            <div class="sectionFile__form">
+              <label class="navsectionFile__label control" for="crearFile">New notebook</label>
+              <button class="navsectionFile__button" href="#"><img class="navsectionFile__image" src="../iconos/file.svg" id "crearFile" alt="New file"></button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="sectionFile__form">
+              <input class="form-control navsectionFile__input " type="search" placeholder="Search">
+            </div>
+          </li>
+        </ul>
+      </nav>
     </section>
   </div>
 
