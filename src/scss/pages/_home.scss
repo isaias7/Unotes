@@ -9,12 +9,24 @@
 }
 
 .sectionNotes__notes{
-  border: 2px solid #DBDBDD;
+  border-bottom: 2px solid #DBDBDD;
   margin-top: 10px;
+  cursor: hand;
 }
 
+// .sectionNotes__notes > button {
+//   margin-top: 10px;
+//   overflow: hidden;
+//   width: 35%;
+// }
+
+// .sectionNotes__notes > button:hover {
+//   margin-top: 10px;
+//   display: inline-block;
+// }
+
 .sectionNotes__paragraph{
-  margin: 0px 0px 0px 0px;
+  margin: 10px 10px 3px 10px;
   padding: 0.5rem;
   text-align: justify;
 }
@@ -85,7 +97,7 @@ textarea:focus, input:focus{
   cursor: default;
 }
 
-  .navEditor__image:hover {
+.navEditor__image:hover {
   width: 4rem;
   height: 4rem;
   margin: 0px;
@@ -126,25 +138,29 @@ textarea:focus, input:focus{
 }
 //TEXT AREA
 .textArea{
-    background-color:#fff;
-    height: 100vh;
-    font-weight: 100%
+  background-color:#fff;
+  height: 100vh;
+  font-weight: 100%
 }
 .textArea__input{
   width: 100%;
   //height: 100vh;
   border: none;
 }
+
 //cambiarlo, es para que np queden espacios en blanco
 .col-md-12, .col-md-1, .col-md-3{
   padding: 0px; 
 }
+
 .navbar-nav{
   margin: 1rem;
 }
+
 .navbar{
   margin: 0px;
 }
+
 //NAV BAR
 .navBar{
   background-color:#ffbbbc; 
@@ -180,6 +196,10 @@ textarea:focus, input:focus{
 ul, ol {
   margin: 0;
   padding: 1rem 0 0 1rem;
+}
+
+.sectionNotes__form{
+  border-bottom: 2px solid #DBDBDD;
 }
 
 .sectionNotes__form > input {
@@ -224,6 +244,7 @@ body{
   border: 1px;
   border-color: #E5E5E8;
   left: -40%;
+  -webkit-transition: ease 2s;
 }
 .navsectionFile__image{
   width: 1.5rem;
@@ -267,4 +288,13 @@ body{
   width: 2rem;
   margin: 0rem 1rem 0rem 1rem;
 
+<<<<<<< HEAD
 }
+=======
+h2 {
+  margin: 0;
+  width: 65%;
+  display: inline-block;
+  float: left;
+}
+>>>>>>> a5ec116ae3e966f68a1e3beea861d650dcc3be6f

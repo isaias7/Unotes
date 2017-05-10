@@ -20,7 +20,7 @@
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/user-3.svg" alt="Configuration user"></button>
             </li>
             <li class="nav-item">
-              <button class="navBar__button" href="#"  id="buttonNote" onclick="return note();"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
+              <button class="navBar__button" href="#" id="buttonNote" onclick="return note();"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
             </li>
             <li class="nav-item">
               <button class="navBar__button" href="#" id="buttonLib" onclick="return lib();"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
@@ -41,6 +41,8 @@
           </div>
           <div class="sectionNotes__notes">
             <h2>Nota 1</h2>
+            <button class="navNote__button" a href="#"><img class="navNote__image" src="../iconos/send.svg" alt="Send"></button>
+            <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/delete.svg" alt="Delete"></button>
             <p class="sectionNotes__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
               iure iusto. Veritatis labore atque dolorem doloremque doloribus quae necessitatibus, autem minus. Velit repellendus
               magnam, ut.</p>
@@ -59,7 +61,7 @@
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
                     </li>
                     <li class="nav-item ">
-                      <input class="form-control navNote__input" id ="nameNote" type="text" placeholder="New note">
+                      <input class="form-control navNote__input" id="nameNote" type="text" placeholder="New note">
                     </li>
                     <li class="nav-item">
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/user-2.svg" alt="New user"></button>
@@ -110,9 +112,7 @@
         </div>
       </div>
     </div>
-
     <section class="sectionFile" id="menuLateralLib">
-
       <nav class="navBarnavsectionFile navbar navbar-toggleable-md navbar-light bg-faded">
         <ul "navBar__list navbar-nav mr-auto">
           <li class="nav-item">
@@ -130,10 +130,6 @@
       </nav>
     </section>
   </div>
-
-
-
-
   <script src="../src/js/home.js"></script>
 
 </body>
