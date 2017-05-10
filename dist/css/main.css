@@ -4124,11 +4124,12 @@ button.close {
   height: 100vh; }
 
 .sectionNotes__notes {
-  border: 2px solid #DBDBDD;
-  margin-top: 10px; }
+  border-bottom: 2px solid #DBDBDD;
+  margin-top: 10px;
+  cursor: hand; }
 
 .sectionNotes__paragraph {
-  margin: 0px 0px 0px 0px;
+  margin: 10px 10px 3px 10px;
   padding: 0.5rem;
   text-align: justify; }
 
@@ -4271,6 +4272,9 @@ ul, ol {
   margin: 0;
   padding: 1rem 0 0 1rem; }
 
+.sectionNotes__form {
+  border-bottom: 2px solid #DBDBDD; }
+
 .sectionNotes__form > input {
   float: left; }
 
@@ -4305,4 +4309,11 @@ body {
   border-radius: 3px;
   border: 1px;
   border-color: #E5E5E8;
-  left: -40%; }
+  left: -40%;
+  -webkit-transition: ease 2s; }
+
+h2 {
+  margin: 0;
+  width: 65%;
+  display: inline-block;
+  float: left; }
