@@ -5820,3 +5820,73 @@ button.close {
 
 .home {
   background-color: #3fbd01; }
+
+.sectionNotes {
+  background-color: #ecf0f1;
+  height: 100vh; }
+
+.sectionNotes__paragraph {
+  margin: 0px 0px 0px 0px;
+  padding: 0.5rem; }
+
+.navNote {
+  background-color: #e74c3c; }
+
+.navNote__image {
+  width: 3rem;
+  height: 4rem;
+  margin: 0px; }
+
+.navNote__button {
+  background-color: transparent;
+  border: 0px;
+  margin: 0rem 1rem 0rem 1rem; }
+
+.navNote__input {
+  width: 17rem;
+  margin: 0rem 1rem 0rem 1rem; }
+
+.navNote__list {
+  list-style: none;
+  padding: 0px; }
+
+button:focus {
+  outline: 0; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+.navEditor {
+  background-color: #e67f74; }
+
+.textArea {
+  background-color: #f5f7f7;
+  height: 100vh;
+  font-weight: 100%; }
+
+.col-md-12, .col-md-1, .col-md-3 {
+  padding: 0px; }
+
+.navbar-nav {
+  margin: 1rem; }
+
+.navbar {
+  margin: 0px; }
+
+.navBar {
+  background-color: #ffbbbc;
+  height: 100vh; }
+
+.navBar__list {
+  list-style: none;
+  padding: 0px; }
+
+.navBar__button {
+  background-color: transparent;
+  border: 0px;
+  margin: 0px; }
+
+.navBar__image {
+  width: 3rem;
+  height: 4rem;
+  margin: 0px; }

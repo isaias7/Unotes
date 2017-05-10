@@ -14,61 +14,84 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+      <!--inicio del menu-->
       <div class="col-md-1">
-        <nav>
-          <ul>
-            <li><a href="#"></a><img src="../iconos/user-3.svg" alt=""></li>
-            <li><a href="#"></a><img src="../iconos/file.svg" alt=""></li>
-            <li><a href="#"></a><img src="../iconos/agenda.svg" alt=""></li>
-            <li><a href="#"></a><img src="../iconos/tag.svg" alt=""></li>
+        <nav class="navBar navbar navbar-toggleable-md navbar-light bg-faded">
+          <ul "navBar__list navbar-nav mr-auto">
+            <li class="nav-item">
+              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/user-3.svg" alt="Configuration user"></button>
+            <li class="nav-item">
+              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
+            <li class="nav-item">
+              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
+            <li class="nav-item">
+              <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/tag.svg" alt="Tags"></button>
           </ul>
         </nav>
       </div>
       <!--fin de menu-->
+      <!--inicio de notas-->
       <div class="col-md-3">
-        <section>
+        <section class="sectionNotes">
           <input type="search" placeholder="Buscar">
-          <section>
             <h2>Nota 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
+            <p class="sectionNotes__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
               iure iusto. Veritatis labore atque dolorem doloremque doloribus quae necessitatibus, autem minus. Velit repellendus
               magnam, ut.</p>
-          </section>
         </section>
       </div>
       <!--fin de notas-->
+
       <div class="col-md-8">
         <div class="main">
           <div class="row">
             <div class="col-md-12">
-              <nav>
-                <ul>
-                  <li ><a href="#" ></a><img src="../iconos/file.svg" alt="New file"></li>
-                  <input type="text">
-                  <li><a href="#" ></a><img src="../iconos/user-2.svg" alt="New user"></li>
-                  <li><a href="#" ></a><img src="../iconos/send.svg" alt="Send"></li>
-                  <li ><a href="#" ></a><img src="../iconos/delete.svg" alt="Delete"></li>
-                  <!--<li class="nav-item active"><a href="#" class="nav-link"></a><img src="iconos/info-button.svg" alt="Info"></li>-->
-                </ul>
+              <nav class=" navNote navbar navbar-toggleable-md navbar-light bg-faded">
+                <div>
+                  <ul class="navNote__list navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
+                    </li>
+                    <li class="nav-item ">
+                      <input style="box-shadow:none" class="form-control navNote__input" type="text" placeholder="Nueva nota">
+                    </li>
+                    <li class="nav-item">
+                      <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/user-2.svg" alt="New user"></button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="navNote__button" a href="#"><img class="navNote__image" src="../iconos/send.svg" alt="Send"></button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/delete.svg" alt="Delete"></button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/info-button.svg" alt="Info"></button>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
             <div class="col-md-12">
-              <form action="">
-                <select>
+              <nav class=" navEditor navbar navbar-toggleable-md navbar-light bg-faded">
+                <form action="">
+                  <select>
                   <option value="">BrainStation</option>
                   <option value="">UCR</option>
                   <option value="">ULACIT</option>
                   </select>
-                <input type="text" placeholder="tag">
-              </form>
+                  <input type="text" placeholder="tag">
+                </form>
             </div>
-            <div class="col-md-12">
+          </div>
+          <div class="col-md-12">
+            <section class="textArea">
               <input type="text" placeholder="nota">
-            </div>
+            </section>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 </body>
