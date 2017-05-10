@@ -7,11 +7,36 @@
   background-color:#ecf0f1; 
   height: 100vh;
 }
+
+.sectionNotes__notes{
+  border: 2px solid #DBDBDD;
+  margin-top: 10px;
+}
+
 .sectionNotes__paragraph{
   margin: 0px 0px 0px 0px;
   padding: 0.5rem;
+  text-align: justify;
 }
-//NAV NOTE 1
+
+.sectionNotes__button {
+  background-color: transparent;
+  border: 0px;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.sectionNotes__image {
+  width: 3rem;
+  height: 4rem;
+  margin: 0px;
+}
+
+.navNote__image:hover {
+  width: 4rem;
+  height: 4rem;
+  margin: 0px;
+}
+//NAV NOTE
 .navNote{
   background-color:#e74c3c; 
   border-radius: 0;
@@ -48,16 +73,67 @@ button:focus {
 textarea:focus, input:focus{
     outline: none;
 }
-//NAV NOTE 2
+//NAV EDITOR
 .navEditor{
   background-color:#e67f74;
   border-radius: 0; 
+}
+.navEditor__image{
+  width: 1.7rem;
+  height: 2.2rem;
+  margin: 0px;
+  cursor: default;
+}
+
+  .navEditor__image:hover {
+  width: 4rem;
+  height: 4rem;
+  margin: 0px;
+}
+
+.navEditor__button{
+  background-color: transparent;
+  border: 0px;
+  margin: 0rem 1rem 0rem 1rem;
+}
+.navEditor__input{
+    width: 14rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.navEditor__list{
+  list-style: none;
+  padding: 0px;
+}
+
+.navEditor__image:hover {
+  width: 1.7rem;
+  height: 2.2rem;
+  margin: 0px;
+}
+
+.navEditor__button--color{
+  background-color: white;
+
+}
+
+.navEditor__dropdown{
+  width: 17rem;
+  height: 4.5vh;
+  border-radius:4px;
+  margin: 0rem 1rem 0rem 1rem;
+
+
 }
 //TEXT AREA
 .textArea{
     background-color:#fff;
     height: 100vh;
     font-weight: 100%
+}
+.textArea__input{
+  width: 100%;
+  //height: 100vh;
+  border: none;
 }
 //cambiarlo, es para que np queden espacios en blanco
 .col-md-12, .col-md-1, .col-md-3{
@@ -78,21 +154,62 @@ textarea:focus, input:focus{
 .nav-item{
   list-style: none;
 }
+
+.navbar__list {
+  padding: 10rem;
+}
+
 .navBar__button{
   background-color: transparent;
   border: 0px;
   margin: 0px;
-  padding: 0;
+  padding: 2rem;
 }
 .navBar__image{
-  width: 3rem;
-  height: 4rem;
-  margin: 0px;
+  width: 8rem;
+  height: 6rem;
+  margin: 0px;;
 }
 
 .navBar__image:hover {
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 7rem;
   margin: 0px; 
 }
+
+ul, ol {
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+
+.sectionNotes__form > input {
+  float: left;
+}
+
+.sectionNotes__form > button {
+  margin: 1rem 1rem 0 1rem;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1rem 1rem 0 1rem;
+    width: 80%;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: $text-size;
+}
+
+.btn:hover {
+  background-color: #E5E5E8;
+}
+
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+
 

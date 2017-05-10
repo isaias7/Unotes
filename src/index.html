@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unotes</title>
   <link rel="stylesheet" href="css/main.css">
-
-
 </head>
-
 <body>
   <div class="container-fluid">
     <div class="row">
@@ -20,12 +16,16 @@
           <ul "navBar__list navbar-nav mr-auto">
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/user-3.svg" alt="Configuration user"></button>
+            </li>
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/file.svg" alt="File"></button>
+            </li>
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/agenda.svg" alt="Library"></button>
+            </li>
             <li class="nav-item">
               <button class="navBar__button" href="#"><img class="navBar__image" src="../iconos/tag.svg" alt="Tags"></button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -33,15 +33,19 @@
       <!--inicio de notas-->
       <div class="col-md-3">
         <section class="sectionNotes">
-          <input type="search" placeholder="Buscar">
+          <div class="sectionNotes__form">
+            <input type="search" class="form-control navNote__input" placeholder="Buscar">
+            <button class="sectionNotes__button" href="#"><img class="sectionNotes__image" src="../iconos/search.svg" alt="Search"></button>
+          </div>
+          <div class="sectionNotes__notes">
             <h2>Nota 1</h2>
             <p class="sectionNotes__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
               iure iusto. Veritatis labore atque dolorem doloremque doloribus quae necessitatibus, autem minus. Velit repellendus
               magnam, ut.</p>
+          </div>
         </section>
       </div>
       <!--fin de notas-->
-
       <div class="col-md-8">
         <div class="main">
           <div class="row">
@@ -53,7 +57,7 @@
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
                     </li>
                     <li class="nav-item ">
-                      <input style="box-shadow:none" class="form-control navNote__input" type="text" placeholder="Nueva nota">
+                      <input class="form-control navNote__input" type="text" placeholder="Nueva nota">
                     </li>
                     <li class="nav-item">
                       <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/user-2.svg" alt="New user"></button>
@@ -73,27 +77,37 @@
             </div>
             <div class="col-md-12">
               <nav class=" navEditor navbar navbar-toggleable-md navbar-light bg-faded">
-                <form action="">
-                  <select>
-                  <option value="">BrainStation</option>
-                  <option value="">UCR</option>
-                  <option value="">ULACIT</option>
-                  </select>
-                  <input type="text" placeholder="tag">
-                </form>
+                <div>
+                  <ul class="navEditor__list navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/agenda.svg" alt="Configuration user"></button>
+                    </li>
+                    <li class="nav-item">
+                      <select class="navEditor__dropdown">
+                        <option value="">BrainStation</option>
+                        <option value="">UCR</option>
+                        <option value="">ULACIT</option>
+                      </select>
+                    </li>
+                    <li class="nav-item">
+                      <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/tag.svg" alt="Configuration user"></button>
+                    </li>
+                    <li class="nav-item ">
+                      <input style="box-shadow:none" class="form-control navNote__input" type="text" placeholder="Tag">
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
           <div class="col-md-12">
             <section class="textArea">
-              <input type="text" placeholder="nota">
+              <textarea class="textArea__input" type="text" rows="35" placeholder="nota"></textarea>
             </section>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-
 </body>
-
 </html>
