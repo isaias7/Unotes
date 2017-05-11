@@ -36,11 +36,11 @@
       <div class="col-md-3">
         <section class="sectionNotes">
           <div class="sectionNotes__form">
-            <input type="search" class="form-control navNote__input" placeholder="Buscar">
+            <input type="search" class="form-control navNote__input" placeholder="Search">
             <button class="sectionNotes__button" href="#"><img class="sectionNotes__image" src="../iconos/search.svg" alt="Search"></button>
           </div>
           <div class="sectionNotes__notes">
-            <h2>Nota 1</h2>
+            <h2>Note 1</h2>
             <button class="navNote__button" a href="#"><img class="navNote__image" src="../iconos/send.svg" alt="Send"></button>
             <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/delete.svg" alt="Delete"></button>
             <p class="sectionNotes__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam porro quibusdam consectetur, numquam
@@ -51,14 +51,14 @@
       </div>
       <!--fin de notas-->
       <div class="col-md-8">
-        <div class="main">
+        <section>
           <div class="row">
             <div class="col-md-12">
-              <nav class=" navNote navbar navbar-toggleable-md navbar-light bg-faded">
+              <nav class="navNote navbar navbar-toggleable-md navbar-light bg-faded">
                 <div>
                   <ul class="navNote__list navbar-nav mr-auto">
                     <li class="nav-item">
-                      <button class="navNote__button" href="#"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
+                      <button class="navNote__button" href="#" onclick="return note();"><img class="navNote__image" src="../iconos/file.svg" alt="New file"></button>
                     </li>
                     <li class="nav-item ">
                       <input class="form-control navNote__input" id="nameNote" type="text" placeholder="New note">
@@ -97,37 +97,55 @@
                       <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/tag.svg" alt="Configuration user"></button>
                     </li>
                     <li class="nav-item ">
-                      <input style="box-shadow:none" class="form-control navNote__input" type="text" placeholder="Tag">
+                      <input style="box-shadow:none" class="form-control navNote__input " type="text" placeholder="Tag">
                     </li>
                   </ul>
                 </div>
               </nav>
             </div>
           </div>
-          <div class="col-md-12">
-            <section class="textArea">
-              <textarea class="textArea__input" type="text" rows="35" placeholder="nota"></textarea>
-            </section>
+          <div class="row">
+            <div class="col-md-12">
+              <section class="textArea">
+                <textarea class="textArea__input" type="text" rows="35" placeholder="Start your note here..."></textarea>
+              </section>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
+
+
     <section class="sectionFile" id="menuLateralLib">
-      <nav class="navBarnavsectionFile navbar navbar-toggleable-md navbar-light bg-faded">
-        <ul "navBar__list navbar-nav mr-auto">
-          <li class="nav-item">
-            <div class="sectionFile__form">
-              <label class="navsectionFile__label control" for="crearFile">New notebook</label>
-              <button class="navsectionFile__button" href="#"><img class="navsectionFile__image" src="../iconos/file.svg" id "crearFile" alt="New file"></button>
+      <div class="row">
+        <div class="col-md-11">
+          <input class="form-control" type="search" placeholder="Search"></input>
+        </div>
+      </div>
+      <ul class="notebooksList">
+        <li>
+          <div class="row">
+           
+            <div class="col-md-6">
+              <input class="sectionFile__list__li" type ="text" placeholder="Brainstation"></input>
             </div>
-          </li>
-          <li class="nav-item">
-            <div class="sectionFile__form">
-              <input class="form-control navsectionFile__input " type="search" placeholder="Search">
+            <div class="col-md-2">
+              <button class="sectionNotes__button" href="#" onclick="return note();"><img class="sectionNotes__image" src="../iconos/file.svg" alt="Go to"></button>
             </div>
-          </li>
-        </ul>
-      </nav>
+            <div class="col-md-2">
+              <button class="sectionNotes__button" href="#"><img class="sectionNotes__image" src="../iconos/delete.svg" alt="Delete"></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <input class="sectionFiles__input form-control" type="text" placeholder="New notebook"></input>
+        </div>
+        <div class="col-md-2">
+          <button class="sectionNotes__button" href="#"><img class="sectionNotes__image" src="../iconos/add.svg"></button>
+        </div>
+      </div>
     </section>
   </div>
   <script src="../src/js/home.js"></script>

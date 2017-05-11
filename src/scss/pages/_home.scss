@@ -10,41 +10,23 @@
 
 .sectionNotes__notes{
   border-bottom: 2px solid #DBDBDD;
-  margin-top: 10px;
+  margin: 1rem;
   cursor: hand;
+  
 }
-
-// .sectionNotes__notes > button {
-//   margin-top: 10px;
-//   overflow: hidden;
-//   width: 35%;
-// }
-
-// .sectionNotes__notes > button:hover {
-//   margin-top: 10px;
-//   display: inline-block;
-// }
-
+/*
 .sectionNotes__paragraph{
   margin: 10px 10px 3px 10px;
   padding: 0.5rem;
   text-align: justify;
-}
-
+}*/
 .sectionNotes__button {
   background-color: transparent;
   border: 0px;
   margin: 0rem 1rem 0rem 1rem;
 }
-
 .sectionNotes__image {
   width: 3rem;
-  height: 4rem;
-  margin: 0px;
-}
-
-.navNote__image:hover {
-  width: 4rem;
   height: 4rem;
   margin: 0px;
 }
@@ -52,20 +34,17 @@
 .navNote{
   background-color:#e74c3c; 
   border-radius: 0;
-  //margin: 1rem;
 }
 .navNote__image{
+  width: 2.5rem;
+  height: 3.5rem;
+  margin: 0px;
+}
+.navNote__image:hover {
   width: 3rem;
   height: 4rem;
   margin: 0px;
 }
-
-.navNote__image:hover {
-  width: 4rem;
-  height: 4rem;
-  margin: 0px;
-}
-
 .navNote__button{
   background-color: transparent;
   border: 0px;
@@ -74,16 +53,11 @@
 .navNote__input{
     width: 17rem;
     margin: 0rem 1rem 0rem 1rem;
+    cursor: hand;
 }
 .navNote__list{
   list-style: none;
   padding: 0px;
-}
-button:focus {
-  outline:0;
-}
-textarea:focus, input:focus{
-    outline: none;
 }
 //NAV EDITOR
 .navEditor{
@@ -96,44 +70,29 @@ textarea:focus, input:focus{
   margin: 0px;
   cursor: default;
 }
-
 .navEditor__image:hover {
-  width: 4rem;
-  height: 4rem;
+  width: 1.7rem;
+  height: 2.2rem;
   margin: 0px;
+  cursor: default;
 }
 
 .navEditor__button{
+  cursor: default;
   background-color: transparent;
   border: 0px;
   margin: 0rem 1rem 0rem 1rem;
-}
-.navEditor__input{
-    width: 14rem;
-    margin: 0rem 1rem 0rem 1rem;
 }
 .navEditor__list{
   list-style: none;
   padding: 0px;
 }
-
-.navEditor__image:hover {
-  width: 1.7rem;
-  height: 2.2rem;
-  margin: 0px;
-}
-
-.navEditor__button--color{
-  background-color: white;
-
-}
-
 .navEditor__dropdown{
   width: 17rem;
   height: 4.5vh;
   border-radius:4px;
   margin: 0rem 1rem 0rem 1rem;
-
+  cursor: hand;
 
 }
 //TEXT AREA
@@ -144,23 +103,22 @@ textarea:focus, input:focus{
 }
 .textArea__input{
   width: 100%;
-  //height: 100vh;
   border: none;
 }
-
-//cambiarlo, es para que np queden espacios en blanco
+//!!cambiarlo, es para que np queden espacios en blanco
 .col-md-12, .col-md-1, .col-md-3{
   padding: 0px; 
 }
-
+.row{
+  padding-bottom: 0.5rem;
+}
+//!!
 .navbar-nav{
   margin: 1rem;
 }
-
 .navbar{
   margin: 0px;
 }
-
 //NAV BAR
 .navBar{
   background-color:#ffbbbc; 
@@ -170,11 +128,9 @@ textarea:focus, input:focus{
 .nav-item{
   list-style: none;
 }
-
 .navbar__list {
   padding: 10rem;
 }
-
 .navBar__button{
   background-color: transparent;
   border: 0px;
@@ -186,30 +142,17 @@ textarea:focus, input:focus{
   height: 6rem;
   margin: 0px;;
 }
-
 .navBar__image:hover {
   width: 8rem;
   height: 7rem;
   margin: 0px; 
 }
-
-ul, ol {
-  margin: 0;
-  padding: 1rem 0 0 1rem;
-}
-
-.sectionNotes__form{
-  border-bottom: 2px solid #DBDBDD;
-}
-
 .sectionNotes__form > input {
   float: left;
 }
-
 .sectionNotes__form > button {
   margin: 1rem 1rem 0 1rem;
 }
-
 input[type="search"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -217,39 +160,35 @@ input[type="search"] {
     margin: 1rem 1rem 0 1rem;
     width: 70%;
 }
-
 .btn {
   background-color: transparent;
   font-size: $text-size;
 }
-
 .btn:hover {
   background-color: #E5E5E8;
 }
-
-body{
-  height: 100vh;
-  overflow: hidden;
-}
-
-
 //FIRULINES
-
 .sectionFile{
   background-color:#ffbbbc;
   top: 35vh;
+  left: -40%;
+  width: 30rem;
   position: absolute;
   z-index: 2;
   border-radius: 3px;
   border: 1px;
   border-color: #E5E5E8;
-  left: -40%;
   -webkit-transition: ease 2s;
+  transition: ease 2s;
+  text-align: center;
+  border: 1px solid #e6c6c7;
 }
 .navsectionFile__image{
   width: 1.5rem;
   height: 2rem;
   margin: 0px;
+  margin: 0rem 1rem 0rem 0rem;
+
 }
 .navsectionFile__image:hover {
   width: 2rem;
@@ -261,40 +200,41 @@ body{
   border: 0px;
   margin: 1rem;
 }
-.navsectionFile__input{
-    width: 1rem;
-    margin: 0rem 1rem 0rem 1rem;
-}
-.navsectionFile__label{
-    width: 7rem;
-    margin: 0rem 1rem 0rem 1rem;
-}
-.navBarnavsectionFile{
-  background-color:#ffbbbc; 
-  border-radius: 0;
-}
-.navsectionFile__image{
-  margin: 0rem 1rem 0rem 0rem;
-}
-.sectionFile__form {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-  margin-right: 2rem;
-  margin-top: 1rem;
-}
-.navsectionFile__input--folder{
-  background-color: transparent;
-  color: black;
-  width: 2rem;
-  margin: 0rem 1rem 0rem 1rem;
+.notebooksList{
+  list-style-type: none;
+  border-top: 1px solid #e6c6c7;
+  border-bottom: 1px solid #e6c6c7;
 
-<<<<<<< HEAD
 }
-=======
+.sectionFiles__input{
+  width: 100%;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.sectionFile__list__li{
+  background-color: #ffbbbc;
+  color: black;
+  border-color: transparent;
+}
+
 h2 {
+  color:#947f7f;
   margin: 0;
   width: 65%;
   display: inline-block;
   float: left;
 }
->>>>>>> a5ec116ae3e966f68a1e3beea861d650dcc3be6f
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+ul, ol {
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+button:focus {
+  outline:0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}

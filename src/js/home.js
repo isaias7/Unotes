@@ -1,21 +1,34 @@
 
-window.onload = function init(){
-	   buttonFile = document.getElementById("buttonLib");
-	   menuLateralLib = document.getElementById("menuLateralLib");
-	}
-function note(){
+window.onload = function init() {
+    buttonFile = document.getElementById("buttonLib");
+    menuLateralLib = document.getElementById("menuLateralLib");
+}
+function note() {
     document.getElementById("nameNote").focus();
 }
-function lib(){
+function lib() {
     console.log("llamo");
-	menuLateralLib = document.getElementById("menuLateralLib");
+    menuLateralLib = document.getElementById("menuLateralLib");
     var s = menuLateralLib.style.left;
-    if(s=="40%"){
-        menuLateralLib.style.left=-40+"%";
+    if (s == "40%") {
+        ocultarMenuLibrerias()
     }
-    else{
-        menuLateralLib.style.left=40+"%";
+    else {
+        mostrarMenuLibrerias()
     }
 }
+function ocultarMenuLibrerias() {
+    menuLateralLib = document.getElementById("menuLateralLib");
+    menuLateralLib.style.left = -40 + "%";
+}
+
+function mostrarMenuLibrerias() {
+    menuLateralLib = document.getElementById("menuLateralLib");
+    menuLateralLib.style.left = 40 + "%";
+}
+
 document.onkeydown = function myFunction(event) {
+    if (event.keyCode == 27) {
+        ocultarMenuLibrerias()
+    }
 }
