@@ -57,7 +57,7 @@ function ocultarMenuLibrerias() {
 }
 
 function mostrarMenuLibrerias() {
-    menuLateralLib.style.left = 40 + "%";
+    menuLateralLib.style.left = 8.3 + "%";
     botonLibSeleccionado=true;
     opacarPantalla();
 }
@@ -82,7 +82,7 @@ function mostrarMenuTag() {
     opacarPantalla();
 }
 function opacarPantalla(){
-    pantallaprincipal.style.background="#000";
+    pantallaprincipal.style.background="#fff";
     pantallaprincipal.style.opacity= 0.3;
     //pantallaprincipal.style.filter= "alpha(opacity = 50)";/* required for opacity to work in IE */
 }
@@ -121,7 +121,7 @@ function addBook(){
     //TITULO DEL NOTEBOOK
     var book =inputBookname.value;
     var nombre = document.createElement("h6");
-    nombre.contenteditable ="true";
+    nombre.setAttribute("contenteditable", "true");
     var texto = document.createTextNode(book);
     nombre.appendChild(texto);
 
@@ -131,13 +131,16 @@ function addBook(){
 
     //COLUMN
     var divCol = document.createElement("div");
-    divCol.setAttribute("class", "col-md-2");
+    divCol.setAttribute("class", "col-md-4 col-md-offset-1");
 
     div.appendChild(divCol);
     divCol.appendChild(nombre);
 
     //LISTA
     var node = document.createElement("li");
+    node.setAttribute("class", "sectionFile__list__li");
+
+
     node.appendChild(div);
     document.getElementById("notebooksList").appendChild(node);
     console.log("agregado");
