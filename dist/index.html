@@ -115,8 +115,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
 
@@ -158,10 +156,10 @@
                   </li>
                   <li class="nav-item">
                     <select class="navEditor__dropdown">
-                        <option value="">BrainStation</option>
-                        <option value="">UCR</option>
-                        <option value="">ULACIT</option>
-                      </select>
+                    <option value="">BrainStation</option>
+                    <option value="">UCR</option>
+                    <option value="">ULACIT</option>
+                  </select>
                   </li>
                   <li class="nav-item">
                     <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/tag.svg" alt="Configuration user"></button>
@@ -174,37 +172,64 @@
             </nav>
           </div>
           <!--fin editor de notas-->
-        </div>
-        <!--editor-->
-        <div class="row">
+          <!--fin menu de notas-->
+          <!--editor de notas-->
           <div class="col-md-12">
-            <section class="textArea">
-              <textarea class="textArea__input" type="text" rows="15" placeholder="Start your note here..."></textarea>
-            </section>
+            <nav class=" navEditor navbar navbar-toggleable-md navbar-light bg-faded">
+              <div>
+                <ul class="navEditor__list navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/agenda.svg" alt="Configuration user"></button>
+                  </li>
+                  <li class="nav-item">
+                    <select class="navEditor__dropdown">
+                    <option value="">BrainStation</option>
+                    <option value="">UCR</option>
+                    <option value="">ULACIT</option>
+                  </select>
+                  </li>
+                  <li class="nav-item">
+                    <button class="navEditor__button" href="#"><img class="navEditor__image" src="../iconos/tag.svg" alt="Configuration user"></button>
+                  </li>
+                  <li class="nav-item ">
+                    <input class="form-control navNote__input " type="text" placeholder="Tag">
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-        </div>
-
-        <!--fin editor-->
+          <!--editor-->
+          <div class="row">
+            <div class="col-md-12">
+              <section class="textArea">
+                <textarea class="textArea__input" type="text" rows="15" placeholder="Start your note here..."></textarea>
+              </section>
+            </div>
+          </div>
+          <!--fin editor-->
       </section>
 
       <!--NOTEBOOKS-->
       <section class="sectionFile" id="menuLateralLib">
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-5">
+          <div class="col-md-11">
             <h2>Notebooks</h2>
           </div>
         </div>
-
         <div class="row">
-          <div class="col-md-11">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-7">
             <input class="form-control" type="search" placeholder="Search"></input>
+          </div>
+          <div class="col-md-2">
+            <button class="sectionFile__button sectionFile__button--margin" href="#" id="buttonEditar"><img id = "imgEditar" class="sectionFile__image" src="../iconos/search.svg" alt="Go to"></button>
           </div>
         </div>
         <ul id="notebooksList" class="notebooksList">
           <li class="sectionFile__list__li">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-md-4 col-md-offset-1">
                 <h6 contenteditable="true" id="inputName">BrainStation</h6>
                 <!--input class="sectionFile__list__li" type="text" placeholder="Brainstation"></input-->
               </div>
@@ -220,15 +245,15 @@
             </div>
           </li>
         </ul>
-
         <div class="row">
-          <div class="col-md-6">
-            <input class="sectionFiles__input form-control" type="text" id="inputBook" placeholder="New notebook"></input>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-7">
+            <input class="form-control" type="text" id="inputBook" placeholder="New notebook"></input>
           </div>
           <div class="col-md-2">
-            <button class="sectionFile__button sectionFile__button--margin" href="#" id="addBook"><img class="sectionFile__image" src="../iconos/add.svg"></button>
+            <button class="sectionFile__button sectionFile__button--margin" href="#" id="addBook"><img class="sectionFile__image" src="../iconos/add.svg" alt="Add"></button>
           </div>
-        </div>
 
       </section>
 
@@ -265,11 +290,17 @@
           <div class="col-md-2">
             <button class="sectionFile__button sectionFile__button--margin" href="#"><img class="sectionFile__image" src="../iconos/add.svg"></button>
           </div>
-        </div>
+          </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <input class="sectionFiles__input form-control" type="text" placeholder="New tag"></input>
+            </div>
+            <div class="col-md-2">
+              <button class="sectionFile__button" href="#"><img class="sectionFile__image" src="../iconos/add.svg"></button>
+            </div>
       </section>
-
-    </div>
-    <script src="../src/js/home.js"></script>
+      </div>
+      <script src="../src/js/home.js"></script>
 
 </body>
 
