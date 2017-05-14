@@ -1,15 +1,18 @@
 (function(){
 
 
-document.getElementById("pantallaprincipal").addEventListener("click",clickonscreen);
-document.getElementById("buttonNote").addEventListener("click",note);
+document.getElementById("buttonNote").addEventListener("click",editNote);
+document.getElementById("buttonNotebook").addEventListener("click",showMenuNotebooks);
+
+notesModal = document.getElementById("notesModal");
+notebooks = document.getElementById("sectionFile")
+/*document.getElementById("pantallaprincipal").addEventListener("click",clickonscreen);
 document.getElementById("buttonLib").addEventListener("click",lib);
 document.getElementById("buttonTag").addEventListener("click",tag);
 
 document.getElementById("buttonEditar").addEventListener("click",editNameNoteBook);
 document.getElementById("addBook").addEventListener("click",addBook);
 
-notesModal = document.getElementById("notesModal");
 
 buttonFile = document.getElementById("buttonLib");
 menuLateralLib = document.getElementById("menuLateralLib");
@@ -19,24 +22,34 @@ inputBookname= document.getElementById("inputBook");
 
 imgEditar = document.getElementById("imgEditar");
 
-//Pribar e.stoppropag
+//Probar e.stoppropag
 var botonLibSeleccionado=false;
 var botonTagSeleccionado=false;
-
-function note() {
-    notesModal.style.left="20%";
+*/
+function editNote() {
+    notesModal.classList.add("notesModal--show");
     document.getElementById("nameNote").focus();
-    opacarPantalla();
+    document.getElementById("mainView").classList.add("mainViewOpaque");
+    notebooks.classList.remove("sectionFile--show")
 }
-function ocultaNotesModal() {
-    notesModal.style.left = -100 + "%";
-    desOpacarPantalla();
+document.onkeydown = function myFunction(event) {
+    if (event.keyCode == 27) {
+        //ocultarMenuLibrerias();
+        //ocultarMenuTag();
+        notesModal.classList.remove("notesModal--show");
+        document.getElementById("mainView").classList.remove("mainViewOpaque");
+        notebooks.classList.remove("sectionFile--show")
+        
+    }
+}
+function showMenuNotebooks(){
+    notebooks.classList.add("sectionFile--show");
+    notesModal.classList.remove("notesModal--show");
+    document.getElementById("mainView").classList.remove("mainViewOpaque");
 }
 
-function mostrarNotesModal() {
-    notesModal.style.left = 20 + "%";
-    opacarPantalla();
-}
+/*
+
 function noteFromEsc(){
     ocultarMenuLibrerias();
     note();
@@ -80,16 +93,6 @@ function mostrarMenuTag() {
     menuLateralTag.style.left = 40 + "%";
     botonTagSeleccionado=true;
     opacarPantalla();
-}
-function opacarPantalla(){
-    pantallaprincipal.style.background="#fff";
-    pantallaprincipal.style.opacity= 0.3;
-    //pantallaprincipal.style.filter= "alpha(opacity = 50)";/* required for opacity to work in IE */
-}
-function desOpacarPantalla(){
-    pantallaprincipal.style.background="#fff";
-    pantallaprincipal.style.opacity= 1;
-    //pantallaprincipal.style.filter= "alpha(opacity = 50)";/* required for opacity to work in IE */
 }
 function clickonscreen() {
     
@@ -147,14 +150,6 @@ function addBook(){
 }
 
 
-document.onkeydown = function myFunction(event) {
-    if (event.keyCode == 27) {
-        ocultarMenuLibrerias();
-        ocultarMenuTag();
-        ocultaNotesModal();
-    }
-}
-
-
+*/
 })();
 
