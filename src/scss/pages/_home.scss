@@ -14,6 +14,9 @@ textarea:focus, input:focus{
   outline: none;
   border: 0px;
 }
+body{
+  background-color: #454741;
+}
 .form-control{
   margin: 2rem;
 }
@@ -24,7 +27,6 @@ textarea:focus, input:focus{
 .mainViewOpaque{
   opacity: 0.5;
 }
-
 //MENU AZUL
 .section {
   align-items: center;
@@ -32,7 +34,7 @@ textarea:focus, input:focus{
   justify-content: center;
 }
 .sideNav{
-  background-color:#2174A6; 
+  background-color:#2b4f63; 
   height: 100vh;
   width: 100%;
 }
@@ -44,14 +46,44 @@ textarea:focus, input:focus{
   padding: 1rem;
 }
 .sideNav__image{
-  height: 6rem;
+  height: 5rem;
   margin: 0px;
-  width: 8rem;
+  width: 7rem;
+}
+img:hover{
+  background-color:#897044;
+  border-radius: 4px
+}
+//DROPDOWN
+.notesDropDown{
+  background-color: #454741;
+}
+.notesDropDown__dropdown{
+  cursor: hand;
+  height: 3.5rem;
+  border-radius:4px;
+  margin: 2.5rem;
+  margin-left: 15px;
+  width: 20%;
+}
+.notesDropDrown__button{
+  background-color: transparent;
+  border: 0px;
+  display: relative;
+  float: right;
+  margin: 0.2rem;
+  padding: 1rem;
+}
+.notesDropDrown__img{
+  height: 5rem;
+  margin: 0px;
+  width: 7rem;
 }
 //NOTES --ACA VAN LOS THUMBNAILS
 .notes{
-  background-color: salmon;
-  min-height: 100vh;
+  background-color: #454741;
+  min-height: calc(100vh-100px);
+  //min-height: 100vh;
   width: 100%
 }
 .thumbnail {
@@ -97,7 +129,7 @@ textarea:focus, input:focus{
 }
 //-NAV NOTE
 .navNote{
-  background-color:#e74c3c; 
+  background-color:#2b4f63; 
   height: 10vh;
   width: 100%;
 }
@@ -123,7 +155,7 @@ textarea:focus, input:focus{
 }
 //-NAV EDITOR
 .navEditor{
-  background-color:#e67f74;
+  background-color:#5b5e56;
   height: 11vh;
   width: 100%;
 }
@@ -162,13 +194,13 @@ textarea:focus, input:focus{
   border: none;
 }
 .textArea{
-  border-left: 1px solid #e67f74;
-  border-right: 1px solid #e67f74;
-  border-bottom: 1px solid #e67f74;
+  border-left: 1px solid #288bc9;
+  border-right: 1px solid #288bc9;
+  border-bottom: 1px solid #288bc9;
 }
 //MENU DE NOTEBOOKS
 .sectionFile{
-  background-color:#66a5ca;
+  background-color:#C9C9C9;
   top: 0vh;
   left: -1500%;
   width: 25%;
@@ -179,7 +211,7 @@ textarea:focus, input:focus{
   -webkit-transition: ease 2s;
   transition: ease 2s;
   text-align: center;
-  border: 1px solid #2174A6;
+  border: 1px solid #C9C9C9;
   padding-bottom: 0.5rem;
   text-align: center;
 }
@@ -200,8 +232,8 @@ textarea:focus, input:focus{
 }
 .notebooksList{
   list-style-type: none;
-  border-top: 1px solid #2174A6;
-  border-bottom: 1px solid #2174A6;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .sectionFiles__input{
   width: 100%;
@@ -209,7 +241,7 @@ textarea:focus, input:focus{
 }
 .sectionFile__list{
   color: black;
-  background-color: #66a5ca;
+  //background-color: #66a5ca;
   border-color: transparent;
   margin: 0px;
   text-align: left;
@@ -221,7 +253,7 @@ textarea:focus, input:focus{
 }
 // TAGS
 .tagFile{
-  background-color:#66a5ca;
+  background-color:#C9C9C9;
   top: 0vh;
   left: -1500%;
   width: 25%;
@@ -232,7 +264,7 @@ textarea:focus, input:focus{
   -webkit-transition: ease 2s;
   transition: ease 2s;
   text-align: center;
-  border: 1px solid #2174A6;
+  border: 1px solid #C9C9C9;
   padding-bottom: 0.5rem;
   text-align: center;
 }
@@ -253,8 +285,8 @@ textarea:focus, input:focus{
 }
 .tagsList{
   list-style-type: none;
-  border-top: 1px solid #2174A6;
-  border-bottom: 1px solid #2174A6;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .tagFile__input{
   width: 100%;
@@ -262,7 +294,7 @@ textarea:focus, input:focus{
 }
 .tagFile__list{
   color: black;
-  background-color: #66a5ca;
+  //background-color: #66a5ca;
   border-color: transparent;
   margin: 0px;
   text-align: left;
@@ -276,9 +308,6 @@ textarea:focus, input:focus{
 //MEDIA QUERIES
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: black;
-  }
   .sideNav{
     height: 10vh;
   }
@@ -357,12 +386,16 @@ textarea:focus, input:focus{
     margin: 0rem 1.2rem 0rem 0rem;
     width: 3rem;
   }     
+  .notesDropDown__dropdown{
+    width: 55%;
+  }
+  .notesDropDrown__img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 991px) {
-  body {
-    background-color: black 
-  }
   .sideNav{
     height: 13vh;
     text-align: end;
@@ -434,12 +467,12 @@ textarea:focus, input:focus{
     margin: 0rem 1.5rem 0rem 0rem;
     width: 3.5rem;
   }
+  .notesDropDown__dropdown{
+   width: 40%;
+  }
 }
 /* Desktop Styles */
 @media only screen and (min-width: 992px) {
-  body {
-    background-color: black;
-  }
   .sideNav__button {
     margin: 3rem 0rem 3rem 0.2rem;
     padding: 1rem 0rem 1rem 0.2rem;
@@ -475,5 +508,6 @@ textarea:focus, input:focus{
 }
 ul{
   list-style: none;
-  margin-left: 5px;
+  margin: 0;
+  
 }
