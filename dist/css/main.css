@@ -4192,7 +4192,7 @@ textarea:focus, input:focus {
 
 .notes {
   background-color: salmon;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%; }
 
 .thumbnail {
@@ -4211,10 +4211,13 @@ textarea:focus, input:focus {
   height: 3rem;
   padding: 0; }
 
-.pSample {
+.p--shorter {
   height: 8.4rem;
   line-height: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: hyphenate; }
 
 .notesModal {
   border: 0px solid transparent;
@@ -4554,11 +4557,6 @@ textarea:focus, input:focus {
 .row {
   margin-left: 0px;
   margin-right: 0px; }
-
-.row2 {
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 100vh; }
 
 .cols {
   padding-left: 0px;

@@ -14,25 +14,7 @@ notebooks = document.getElementById("sectionFile");
 inputNameNoteBook= document.getElementById("inputNoteBook");
 
 var creatingNote=false;
-/*document.getElementById("pantallaprincipal").addEventListener("click",clickonscreen);
-document.getElementById("buttonLib").addEventListener("click",lib);
-document.getElementById("buttonTag").addEventListener("click",tag);
 
-document.getElementById("buttonEditar").addEventListener("click",editNameNoteBook);
-document.getElementById("addBook").addEventListener("click",addBook);
-
-
-buttonFile = document.getElementById("buttonLib");
-menuLateralLib = document.getElementById("menuLateralLib");
-menuLateralTag = document.getElementById("menuLateralTag");
-pantallaprincipal = document.getElementById("pantallaprincipal");
-
-imgEditar = document.getElementById("imgEditar");
-
-//Probar e.stoppropag
-var botonLibSeleccionado=false;
-var botonTagSeleccionado=false;
-*/
 function showNotesEditor() {
     notesModal.classList.add("notesModal--show");
     document.getElementById("nameNote").focus();
@@ -47,6 +29,9 @@ document.onkeydown = function myFunction(event) {
             notebooks.classList.remove("sectionFile--show");
             document.getElementById("mainView").classList.remove("mainViewOpaque");
             creatingNote=false;
+            document.getElementById("nameNote").value="";
+            document.getElementById("contentNote").value="";
+
             break;
         case 13:
             createNote();
@@ -61,6 +46,7 @@ function createNote(){
         h3.appendChild(document.createTextNode(title));
 
         var p = document.createElement("p");
+        p.setAttribute("class","p--shorter");
         p.appendChild(document.createTextNode(content));
         
         
@@ -92,8 +78,6 @@ function createNote(){
         button2.appendChild(img2);
         button3.appendChild(img3);
 
-
-
         //CAPTION
         var div1 =document.createElement("div");
         div1.setAttribute("class","caption");
@@ -117,21 +101,6 @@ function createNote(){
         console.log(title+"-"+content);
     }
 }
-/*
-<div class="col-md-3">
-              <div class="thumbnail">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum obcaecati, hic commodi modi, consequuntur,
-                    sequi et incidunt necessitatibus, id ipsum reprehenderit inventore odio. Consequatur incidunt ipsam,
-                    esse recusandae iste sunt.</p>
-                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/send.svg" alt="Send"></button>
-                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/pencil.svg" alt="Edit"></button>
-                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/delete.svg" alt="Delete"></button>
-                </div>
-              </div>
-            </div>
-*/
 function showMenuNotebooks(){
     notebooks.classList.add("sectionFile--show");
     notesModal.classList.remove("notesModal--show");
@@ -169,107 +138,5 @@ function addNoteBook(){
 }
 // TAGS ---------------------------------------------------------------------
 
-/*
 
-function noteFromEsc(){
-    ocultarMenuLibrerias();
-    note();
-}
-function lib() {
-    var s = menuLateralLib.style.left;
-    if (s == "40%") {
-        ocultarMenuLibrerias();
-    }
-    else {
-        mostrarMenuLibrerias();
-    }
-}
-function ocultarMenuLibrerias() {
-    menuLateralLib.style.left = -40 + "%";
-    botonLibSeleccionado=false;
-    desOpacarPantalla();
-}
-
-function mostrarMenuLibrerias() {
-    menuLateralLib.style.left = 8.3 + "%";
-    botonLibSeleccionado=true;
-    opacarPantalla();
-}
-function tag(){
-    var s = menuLateralTag.style.left;
-    if (s == "40%") {
-        ocultarMenuTag();
-    }
-    else {
-        mostrarMenuTag();
-    }
-}
-function ocultarMenuTag() {
-    menuLateralTag.style.left = -40 + "%";
-    botonTagSeleccionado=false;
-    desOpacarPantalla();
-}
-
-function mostrarMenuTag() {
-    menuLateralTag.style.left = 40 + "%";
-    botonTagSeleccionado=true;
-    opacarPantalla();
-}
-function clickonscreen() {
-    
-    var leftLib = menuLateralLib.style.left;
-    var leftTag = menuLateralTag.style.left;
-    
-    if(!botonLibSeleccionado){
-        if (leftLib == "40%") {
-            ocultarMenuLibrerias();
-        }
-    }
-    if(!botonTagSeleccionado){
-         if (leftTag == "40%") {
-            ocultarMenuTag();   
-        }
-    }
-     botonTagSeleccionado=false;
-     botonLibSeleccionado=false;
-}
-
-function editNameNoteBook(){
-    imgEditar.src="../iconos/checked.svg";
-}
-function addBook(){
-    console.log("new book");
-  
-
-
-    //TITULO DEL NOTEBOOK
-    var book =inputBookname.value;
-    var nombre = document.createElement("h6");
-    nombre.setAttribute("contenteditable", "true");
-    var texto = document.createTextNode(book);
-    nombre.appendChild(texto);
-
-    //ROW
-    var div = document.createElement("div");
-    div.setAttribute("class", "row")
-
-    //COLUMN
-    var divCol = document.createElement("div");
-    divCol.setAttribute("class", "col-md-4 col-md-offset-1");
-
-    div.appendChild(divCol);
-    divCol.appendChild(nombre);
-
-    //LISTA
-    var node = document.createElement("li");
-    node.setAttribute("class", "sectionFile__list__li");
-
-
-    node.appendChild(div);
-    document.getElementById("notebooksList").appendChild(node);
-    console.log("agregado");
-}
-
-
-*/
 })();
