@@ -51,7 +51,11 @@ textarea:focus, input:focus{
   width: 8rem;
 }
 //NOTES --ACA VAN LOS THUMBNAILS
-
+.notes{
+  background-color: salmon;
+  height: 100vh;
+  width: 100%
+}
 .thumbnail {
   margin-left: 15px;
   margin-right: 15px;
@@ -61,52 +65,19 @@ textarea:focus, input:focus{
   background-color: transparent;
   border: 0;
   margin: 0;
-  padding: 4px;
+  padding: 2rem;
 }
+
 .note__image {
-  width: 3rem;
-  height: 3rem;
-  padding: 0;
+  width: 4rem;
+  height: 4rem;
 }
 
-
-.notes{
-  background-color: salmon;
-  width: 100%
+.thumbnail {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
 }
-.illustration{
-  width:100%;
-}
-.container-fluid{
-  padding: 0px;
-}
-.row {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100vh;
-}
-.cols {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-ul{
-  list-style: none;
-}
-
-.pSample {
-    height:8.4rem;
-    line-height:20px;
-    overflow:hidden;
-}
-
-//******----- CSS VIEJO ----------******************
-//SECTION NOTE
-.sectionNotes{
-  background-color:#ecf0f1; 
-  height: 100vh;
-  width: 100%
-}
-
 //NOTES MODAL--EDITOR DE NOTAS
 .notesModal{
   border: 0px solid transparent ;
@@ -222,7 +193,6 @@ ul{
 .sectionFile__button{
   background-color: transparent;
   border: 0px;
-  float: left;
 }
 .sectionFile__button--margin{
   margin: 20px;
@@ -233,9 +203,6 @@ ul{
   border-bottom: 1px solid #2174A6;
 }
 .sectionFiles__input{
-  background-color: transparent;
-  // border: none;
-  display: inline-block;
   width: 100%;
   margin: 1rem 1rem 0 1rem;
 }
@@ -245,77 +212,6 @@ ul{
   border-color: transparent;
   margin: 0px;
   text-align: left;
-}
-//FIRULINES-TAG
-.sectionTag{
-  background-color:#ffbbbc;
-  border: 1px solid #e6c6c7;
-  border-radius: 10px;
-  // height: 20px;
-  left: 40%;
-  padding-bottom: 0.5rem;
-  position: absolute;
-  transition: ease 2s;
-  text-align: center;
-  top: 35vh;
-  -webkit-transition: ease 2s;
-  width: 30%;
-  z-index: 2;
-}
-.form-control{
-  margin: 2rem;
-  position: relative;
-  width: 90%;
-}
-h2 {
-  color:#947f7f;
-  display: inline-block;
-  // margin-right: 2rem;
-  margin: 2rem 0 0 0;
-  width: 65%;
-}
-.tagInput{
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 90%;
-}
-.tag__image {
-  background-color: transparent;
-  border: 0;
-  height: 3rem;
-  margin: 2px;
-  padding: 0;
-  // position: absolute;
-  width: 3rem;
-}
-textarea:focus, input:focus{
-  outline: none;
-}
-*:focus {
-  border: 0px;
-  outline: none;
-}
-
-// no se que hace esto
-.notesModal{
-  border: 0px solid transparent ;
-  height: 30vh;
-  left: -100%;
-  position: absolute;
-  text-align: center;
-  transition: ease 2s;
-  top: 20vh;
-  -webkit-transition: ease 2s;
-  width: 60%;
-  z-index: 2;
-}
-.textArea{
-  border-bottom: 1px solid #e67f74;
-  border-left: 1px solid #e67f74;
-  border-right: 1px solid #e67f74;
 }
 .sectionFile__li{
   align-items: center;
@@ -507,3 +403,4 @@ ul{
   list-style: none;
   margin-left: 5px;
 }
+//---PUSH CARO X SI HAY CONFLICO
