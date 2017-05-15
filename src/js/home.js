@@ -5,7 +5,7 @@ document.getElementById("buttonNote").addEventListener("click",showNotesEditor);
 document.getElementById("buttonNotebook").addEventListener("click",showMenuNotebooks);
 document.getElementById("addNoteBook").addEventListener("click",addNoteBook);
 
-// document.getElementById("buttonTag").addEventListener("click",showMenuTag);
+document.getElementById("buttonTag").addEventListener("click",showMenuTag);
 // document.getElementById("addTag").addEventListener("click",addNote);
 
 notesModal = document.getElementById("notesModal");
@@ -27,6 +27,7 @@ document.onkeydown = function myFunction(event) {
         case 27:
             notesModal.classList.remove("notesModal--show");
             notebooks.classList.remove("sectionFile--show");
+            tags.classList.remove('tagFile--show');
             document.getElementById("mainView").classList.remove("mainViewOpaque");
             creatingNote=false;
             document.getElementById("nameNote").value="";
@@ -104,6 +105,7 @@ function createNote(){
 function showMenuNotebooks(){
     notebooks.classList.add("sectionFile--show");
     notesModal.classList.remove("notesModal--show");
+    tags.classList.remove('tagFile--show');
     document.getElementById("mainView").classList.add("mainViewOpaque");
 }
 function addNoteBook(){
@@ -138,5 +140,14 @@ function addNoteBook(){
 }
 // TAGS ---------------------------------------------------------------------
 
+
+tags = document.getElementById('tagFile');
+function showMenuTag(){
+    console.log('hola');
+    tags.classList.add('tagFile--show');
+    notesModal.classList.remove('notesModal--show');
+    notebooks.classList.remove('sectionFile--show');
+    document.getElementById("mainView").classList.add("mainViewOpaque");
+}
 
 })();
