@@ -5,8 +5,11 @@ document.getElementById("buttonNote").addEventListener("click",showNotesEditor);
 document.getElementById("buttonNotebook").addEventListener("click",showMenuNotebooks);
 document.getElementById("addNoteBook").addEventListener("click",addNoteBook);
 
+// document.getElementById("buttonTag").addEventListener("click",showMenuTag);
+// document.getElementById("addTag").addEventListener("click",addNote);
+
 notesModal = document.getElementById("notesModal");
-notebooks = document.getElementById("sectionFile")
+notebooks = document.getElementById("sectionFile");
 
 inputNameNoteBook= document.getElementById("inputNoteBook");
 
@@ -164,6 +167,7 @@ function addNoteBook(){
     document.getElementById("notebooksList").appendChild(node);
     console.log("agregado");
 }
+// TAGS ---------------------------------------------------------------------
 
 /*
 

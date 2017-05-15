@@ -70,6 +70,12 @@ textarea:focus, input:focus{
   height: 3rem;
   padding: 0;
 }
+.pSample {
+    height:8.4rem;
+    line-height:20px;
+    overflow:hidden;
+}
+
 //NOTES MODAL--EDITOR DE NOTAS
 .notesModal{
   border: 0px solid transparent ;
@@ -211,6 +217,58 @@ textarea:focus, input:focus{
   justify-content: flex-start;
 }
 // TAGS
+.tagFile{
+  background-color:#66a5ca;
+  top: 0vh;
+  left: -1500%;
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  border: 1px;
+  -webkit-transition: ease 2s;
+  transition: ease 2s;
+  text-align: center;
+  border: 1px solid #2174A6;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.tagFile--show{
+  left: 8.3%;
+}
+.tagFile__image{
+  width: 2rem;
+  height: 3rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+.tagFile__button{
+  background-color: transparent;
+  border: 0px;
+}
+.tagFile__button--margin{
+  margin: 20px;
+}
+.tagsList{
+  list-style-type: none;
+  border-top: 1px solid #2174A6;
+  border-bottom: 1px solid #2174A6;
+}
+.tagFile__input{
+  width: 100%;
+  margin: 1rem 1rem 0 1rem;
+}
+.tagFile__list{
+  color: black;
+  background-color: #66a5ca;
+  border-color: transparent;
+  margin: 0px;
+  text-align: left;
+}
+.tagFile__li{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
 
 //MEDIA QUERIES
 /* Mobile Styles */
@@ -235,8 +293,8 @@ textarea:focus, input:focus{
   .notesModal{
     left: 0%;
     width: 100%;
-   }
-   .navNote__input{
+  }
+  .navNote__input{
     width: 10.5rem;
   }
   .navNote__image{
@@ -260,7 +318,7 @@ textarea:focus, input:focus{
     margin: 1rem;
     cursor: hand;
   }
-   .navEditor__image{
+  .navEditor__image{
     height: 1.1rem;
     cursor: default;
     margin: 1rem 0rem 1rem 1rem;
@@ -279,13 +337,23 @@ textarea:focus, input:focus{
   .sectionFile--show{
     top: 11vh;
     width: 100%;
-    left:0%;
+    left:0;
   }
   .sectionFile__image{
     height: 5rem;
     margin: 0rem 1.2rem 0rem 0rem;
     width: 3rem;
-    }     
+  }
+  .tagFile--show{
+    top: 11vh;
+    width: 100%;
+    left:0;
+  }
+  .tagFile__image{
+    height: 5rem;
+    margin: 0rem 1.2rem 0rem 0rem;
+    width: 3rem;
+  }     
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 991px) {
@@ -311,9 +379,9 @@ textarea:focus, input:focus{
   ul{
     display: flex;
   }
-   .notesModal{
-     width: 90%;
-     left: 5%;
+  .notesModal{
+    width: 90%;
+    left: 5%;
    }
   .navNote__image{
     height: 3rem;
@@ -350,6 +418,15 @@ textarea:focus, input:focus{
     width: 83.4%;
    }
   .sectionFile__image{
+    height: 5.5rem;
+    margin: 0rem 1.5rem 0rem 0rem;
+    width: 3.5rem;
+  }
+  .tagFile{
+    top: 14vh;
+    width: 83.4%;
+   }
+  .tagFile__image{
     height: 5.5rem;
     margin: 0rem 1.5rem 0rem 0rem;
     width: 3.5rem;
