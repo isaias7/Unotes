@@ -4204,16 +4204,12 @@ textarea:focus, input:focus {
   background-color: transparent;
   border: 0;
   margin: 0;
-  padding: 2rem; }
+  padding: 4px; }
 
 .note__image {
-  width: 4rem;
-  height: 4rem; }
-
-.thumbnail {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 15px; }
+  width: 3rem;
+  height: 3rem;
+  padding: 0; }
 
 .notesModal {
   border: 0px solid transparent;
@@ -4486,6 +4482,11 @@ textarea:focus, input:focus {
 .row {
   margin-left: 0px;
   margin-right: 0px; }
+
+.row2 {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100vh; }
 
 .cols {
   padding-left: 0px;
