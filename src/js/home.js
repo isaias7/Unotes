@@ -10,6 +10,7 @@ notebooks = document.getElementById("sectionFile")
 
 inputNameNoteBook= document.getElementById("inputNoteBook");
 
+var creatingNote=false;
 /*document.getElementById("pantallaprincipal").addEventListener("click",clickonscreen);
 document.getElementById("buttonLib").addEventListener("click",lib);
 document.getElementById("buttonTag").addEventListener("click",tag);
@@ -34,16 +35,100 @@ function showNotesEditor() {
     document.getElementById("nameNote").focus();
     document.getElementById("mainView").classList.add("mainViewOpaque");
     notebooks.classList.remove("sectionFile--show")
+    creatingNote =true;
 }
 document.onkeydown = function myFunction(event) {
-    if (event.keyCode == 27) {
-        //ocultarMenuLibrerias();
-        //ocultarMenuTag();
-        notesModal.classList.remove("notesModal--show");
-        document.getElementById("mainView").classList.remove("mainViewOpaque");
-        notebooks.classList.remove("sectionFile--show")   
+    switch(event.keyCode){
+        case 27:
+            notesModal.classList.remove("notesModal--show");
+            notebooks.classList.remove("sectionFile--show");
+            document.getElementById("mainView").classList.remove("mainViewOpaque");
+            creatingNote=false;
+            break;
+        case 13:
+            createNote();
     }
 }
+function createNote(){
+    if(creatingNote){
+        var title = document.getElementById("nameNote").value;
+        var content =document.getElementById("contentNote").value;
+
+        var h3 = document.createElement("h3");
+        h3.appendChild(document.createTextNode(title));
+
+        var p = document.createElement("p");
+        p.appendChild(document.createTextNode(content));
+        
+        
+        var button1 = document.createElement("button");
+        var img1 =document.createElement("img");
+
+        img1.setAttribute("class","note__image");
+        img1.setAttribute("src","../iconos/send.svg");
+
+        button1.setAttribute("class","note__button");
+        
+        var button2 = document.createElement("button");
+        var img2 =document.createElement("img"); 
+        
+        img2.setAttribute("class","note__image");
+        img2.setAttribute("src","../iconos/pencil.svg");
+
+        button2.setAttribute("class","note__button");
+
+        var button3 = document.createElement("button");
+        var img3 =document.createElement("img");
+        
+        img3.setAttribute("class","note__image");
+        img3.setAttribute("src","../iconos/delete.svg");
+
+        button3.setAttribute("class","note__button");
+
+        button1.appendChild(img1);
+        button2.appendChild(img2);
+        button3.appendChild(img3);
+
+
+
+        //CAPTION
+        var div1 =document.createElement("div");
+        div1.setAttribute("class","caption");
+        var div2=document.createElement("div");
+        div2.setAttribute("class","thumbnail");
+        var div3=document.createElement("div");
+        div3.setAttribute("class", "col-md-3");
+
+        div1.appendChild(h3);
+        div1.appendChild(p);
+
+        //buttons
+        div1.appendChild(button1);
+        div1.appendChild(button2);
+        div1.appendChild(button3);
+
+        div2.appendChild(div1);
+        div3.appendChild(div2);
+        //thumbnails
+        document.getElementById("thumbnails").appendChild(div3);
+        console.log(title+"-"+content);
+    }
+}
+/*
+<div class="col-md-3">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum obcaecati, hic commodi modi, consequuntur,
+                    sequi et incidunt necessitatibus, id ipsum reprehenderit inventore odio. Consequatur incidunt ipsam,
+                    esse recusandae iste sunt.</p>
+                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/send.svg" alt="Send"></button>
+                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/pencil.svg" alt="Edit"></button>
+                  <button class="note__button" href="#" id="buttonLib"><img class="note__image" src="../iconos/delete.svg" alt="Delete"></button>
+                </div>
+              </div>
+            </div>
+*/
 function showMenuNotebooks(){
     notebooks.classList.add("sectionFile--show");
     notesModal.classList.remove("notesModal--show");
