@@ -29,11 +29,13 @@ document.onkeydown = function myFunction(event) {
             tags.classList.remove('tagFile--show');
             document.getElementById('mainView').classList.remove('mainViewOpaque');
             creatingNote=false;
-            document.getElementById('nameNote').value='';
+            document.getElementById('nameNote').value=''
             document.getElementById('contentNote').value='';
             break;
         case 13:
             createNote();
+            document.getElementById('nameNote').value=''
+            document.getElementById('contentNote').value='';
     }
 }
 function createNote(){
